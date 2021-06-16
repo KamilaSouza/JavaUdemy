@@ -9,17 +9,23 @@ public class BankAccount {
     private String phoneNumber;
 
     public BankAccount(){  // default constructor
+        this("12345",2.50,"Default Name", "Default Adress", "Default phone");
         System.out.println("Empty constructor called");
     }
 
     // like a method of a class
     public BankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber){
         System.out.println("Account constructor with parameters called");
+        // setAccountNumber(accountNumber);  // what?
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this ("99999", 100.55,customerName,email,phoneNumber);
     }
 
     public void deposit(int valorOfDeposit){
