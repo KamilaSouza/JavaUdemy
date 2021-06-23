@@ -16,7 +16,7 @@ public class Bed {
         this.quilt = quilt;
     }
 
-    public void make(){
+    public void make() {
         System.out.println("Bed -> Making ");
     }
 
